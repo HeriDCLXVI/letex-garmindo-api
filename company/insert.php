@@ -13,10 +13,11 @@
 	$company_address = $data->company_address;
 	$company_status = $data->company_status;
 	$company_logo = $data->company_logo;
+	$so_number = $data->so_number;
 
 	$response = array();
 
-	$query = mysqli_query($link, "INSERT INTO tb_company(company_code, company_name, company_contact, company_address, company_status, company_logo) VALUES ('$company_code', '$company_name', '$company_contact', '$company_address', '$company_status', '$company_logo')");
+	$query = mysqli_query($link, "INSERT INTO tb_company(company_code, company_name, company_contact, company_address, company_status, company_logo, so_number) VALUES ('$company_code', '$company_name', '$company_contact', '$company_address', '$company_status', '$company_logo', '$so_number')");
 
 	if ($query) {
 		$response['error'] = false;
