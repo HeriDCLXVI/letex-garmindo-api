@@ -15,11 +15,11 @@
 
 	if ($query) {
 		$response['error'] = false;
-		$response['message'] = 'Data berhasil dihapus!';
+		$response['message'] = 'Data deleted!';
 	}
 	else {
 		$response['error'] = true;
-		$response['message'] = "Data gagal dihapus!";
+		$response['message'] = "Failed to delete data!";
 	}
 
 	echo json_encode($response);

@@ -21,11 +21,11 @@
 
 	if ($query) {
 		$response['error'] = false;
-		$response['message'] = 'Data berhasil disimpan!';
+		$response['message'] = 'Data saved!';
 	}
 	else {
 		$response['error'] = true;
-		$response['message'] = "Data gagal disimpan!";
+		$response['message'] = "Failed to save data!";
 	}
 
 	echo json_encode($response);

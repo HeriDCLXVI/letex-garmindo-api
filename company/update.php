@@ -27,11 +27,11 @@
 
 	if ($query) {
 		$response['error'] = false;
-		$response['message'] = 'Data berhasil diubah!';
+		$response['message'] = 'Data updated!';
 	}
 	else {
 		$response['error'] = true;
-		$response['message'] = "Data gagal diubah!";
+		$response['message'] = "Failed to update data!";
 	}
 
 	echo json_encode($response);
