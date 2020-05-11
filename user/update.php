@@ -13,7 +13,7 @@
 
 	$response = array();
 
-	$query = mysqli_query($link, "UPDATE tb_user SET password = '$password', role = '$role', block = '$block' WHERE user_id = '$user_id'");
+	$query = mysqli_query($link, "UPDATE tb_user SET role = '$role', block = '$block' WHERE user_id = '$user_id'");
 
 	if ($query) {
 		$response['error'] = false;
